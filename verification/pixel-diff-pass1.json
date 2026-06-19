@@ -1,0 +1,410 @@
+[
+  {
+    "slug": "home",
+    "tag": "mobile",
+    "pct": 28.457,
+    "worstSeg": 83.06
+  },
+  {
+    "slug": "home",
+    "tag": "desktop",
+    "pct": 25.281,
+    "worstSeg": 45.88
+  },
+  {
+    "slug": "e/ai-foundations",
+    "tag": "desktop",
+    "pct": 0,
+    "worstSeg": 0
+  },
+  {
+    "slug": "e/ai-foundations",
+    "tag": "mobile",
+    "pct": 0,
+    "worstSeg": 0
+  },
+  {
+    "slug": "e/gemini-foundations",
+    "tag": "desktop",
+    "pct": 0,
+    "worstSeg": 0
+  },
+  {
+    "slug": "e/gemini-foundations",
+    "tag": "mobile",
+    "pct": 0,
+    "worstSeg": 0
+  },
+  {
+    "slug": "e/copilot-foundations",
+    "tag": "desktop",
+    "pct": 0,
+    "worstSeg": 0
+  },
+  {
+    "slug": "e/copilot-foundations",
+    "tag": "mobile",
+    "pct": 0,
+    "worstSeg": 0
+  },
+  {
+    "slug": "e/claude-foundations",
+    "tag": "desktop",
+    "pct": 0,
+    "worstSeg": 0
+  },
+  {
+    "slug": "e/claude-foundations",
+    "tag": "mobile",
+    "pct": 0,
+    "worstSeg": 0
+  },
+  {
+    "slug": "e/chatgpt-foundations",
+    "tag": "desktop",
+    "pct": 0,
+    "worstSeg": 0
+  },
+  {
+    "slug": "e/chatgpt-foundations",
+    "tag": "mobile",
+    "pct": 0,
+    "worstSeg": 0
+  },
+  {
+    "slug": "e/ai-everyday-productivity",
+    "tag": "desktop",
+    "pct": 0,
+    "worstSeg": 0
+  },
+  {
+    "slug": "e/ai-everyday-productivity",
+    "tag": "mobile",
+    "pct": 0,
+    "worstSeg": 0
+  },
+  {
+    "slug": "e/ai-fundraising-partnerships",
+    "tag": "desktop",
+    "pct": 0,
+    "worstSeg": 0
+  },
+  {
+    "slug": "e/ai-fundraising-partnerships",
+    "tag": "mobile",
+    "pct": 0,
+    "worstSeg": 0
+  },
+  {
+    "slug": "e/ai-advocacy-policy",
+    "tag": "desktop",
+    "pct": 0,
+    "worstSeg": 0
+  },
+  {
+    "slug": "e/ai-advocacy-policy",
+    "tag": "mobile",
+    "pct": 0,
+    "worstSeg": 0
+  },
+  {
+    "slug": "e/ai-patient-education",
+    "tag": "desktop",
+    "pct": 0,
+    "worstSeg": 0
+  },
+  {
+    "slug": "e/ai-patient-education",
+    "tag": "mobile",
+    "pct": 0,
+    "worstSeg": 0
+  },
+  {
+    "slug": "e/building-ai-agents",
+    "tag": "desktop",
+    "pct": 0,
+    "worstSeg": 0
+  },
+  {
+    "slug": "e/building-ai-agents",
+    "tag": "mobile",
+    "pct": 0,
+    "worstSeg": 0
+  },
+  {
+    "slug": "e/ai-foundations-aug-4",
+    "tag": "desktop",
+    "pct": 0,
+    "worstSeg": 0
+  },
+  {
+    "slug": "e/ai-foundations-aug-4",
+    "tag": "mobile",
+    "pct": 0,
+    "worstSeg": 0
+  },
+  {
+    "slug": "e/ai-foundations-aug-6",
+    "tag": "desktop",
+    "pct": 0,
+    "worstSeg": 0
+  },
+  {
+    "slug": "e/ai-foundations-aug-6",
+    "tag": "mobile",
+    "pct": 0,
+    "worstSeg": 0
+  },
+  {
+    "slug": "e/ai-foundations-aug-17",
+    "tag": "desktop",
+    "pct": 0,
+    "worstSeg": 0
+  },
+  {
+    "slug": "e/ai-foundations-aug-17",
+    "tag": "mobile",
+    "pct": 0,
+    "worstSeg": 0
+  },
+  {
+    "slug": "e/gemini-foundations-aug-18",
+    "tag": "desktop",
+    "pct": 0,
+    "worstSeg": 0
+  },
+  {
+    "slug": "e/gemini-foundations-aug-18",
+    "tag": "mobile",
+    "pct": 0,
+    "worstSeg": 0
+  },
+  {
+    "slug": "e/copilot-foundations-aug-18",
+    "tag": "desktop",
+    "pct": 0,
+    "worstSeg": 0
+  },
+  {
+    "slug": "e/copilot-foundations-aug-18",
+    "tag": "mobile",
+    "pct": 0,
+    "worstSeg": 0
+  },
+  {
+    "slug": "e/claude-foundations-aug-20",
+    "tag": "desktop",
+    "pct": 0,
+    "worstSeg": 0
+  },
+  {
+    "slug": "e/claude-foundations-aug-20",
+    "tag": "mobile",
+    "pct": 0,
+    "worstSeg": 0
+  },
+  {
+    "slug": "e/chatgpt-foundations-aug-20",
+    "tag": "desktop",
+    "pct": 0,
+    "worstSeg": 0
+  },
+  {
+    "slug": "e/chatgpt-foundations-aug-20",
+    "tag": "mobile",
+    "pct": 0,
+    "worstSeg": 0
+  },
+  {
+    "slug": "e/ai-everyday-productivity-aug-24",
+    "tag": "desktop",
+    "pct": 0,
+    "worstSeg": 0
+  },
+  {
+    "slug": "e/ai-everyday-productivity-aug-24",
+    "tag": "mobile",
+    "pct": 0,
+    "worstSeg": 0
+  },
+  {
+    "slug": "e/ai-everyday-productivity-aug-26",
+    "tag": "desktop",
+    "pct": 0,
+    "worstSeg": 0
+  },
+  {
+    "slug": "e/ai-everyday-productivity-aug-26",
+    "tag": "mobile",
+    "pct": 0,
+    "worstSeg": 0
+  },
+  {
+    "slug": "e/ai-everyday-productivity-sep-1",
+    "tag": "desktop",
+    "pct": 0,
+    "worstSeg": 0
+  },
+  {
+    "slug": "e/ai-everyday-productivity-sep-1",
+    "tag": "mobile",
+    "pct": 0,
+    "worstSeg": 0
+  },
+  {
+    "slug": "e/ai-fundraising-partnerships-aug-24",
+    "tag": "desktop",
+    "pct": 0,
+    "worstSeg": 0
+  },
+  {
+    "slug": "e/ai-fundraising-partnerships-aug-24",
+    "tag": "mobile",
+    "pct": 0,
+    "worstSeg": 0
+  },
+  {
+    "slug": "e/ai-fundraising-partnerships-aug-28",
+    "tag": "desktop",
+    "pct": 0,
+    "worstSeg": 0
+  },
+  {
+    "slug": "e/ai-fundraising-partnerships-aug-28",
+    "tag": "mobile",
+    "pct": 0,
+    "worstSeg": 0
+  },
+  {
+    "slug": "e/ai-fundraising-partnerships-sep-1",
+    "tag": "desktop",
+    "pct": 0,
+    "worstSeg": 0
+  },
+  {
+    "slug": "e/ai-fundraising-partnerships-sep-1",
+    "tag": "mobile",
+    "pct": 0,
+    "worstSeg": 0
+  },
+  {
+    "slug": "e/ai-advocacy-policy-aug-24",
+    "tag": "desktop",
+    "pct": 0,
+    "worstSeg": 0
+  },
+  {
+    "slug": "e/ai-advocacy-policy-aug-24",
+    "tag": "mobile",
+    "pct": 0,
+    "worstSeg": 0
+  },
+  {
+    "slug": "e/ai-advocacy-policy-aug-28",
+    "tag": "desktop",
+    "pct": 0,
+    "worstSeg": 0
+  },
+  {
+    "slug": "e/ai-advocacy-policy-aug-28",
+    "tag": "mobile",
+    "pct": 0,
+    "worstSeg": 0
+  },
+  {
+    "slug": "e/ai-advocacy-policy-sep-3",
+    "tag": "desktop",
+    "pct": 0,
+    "worstSeg": 0
+  },
+  {
+    "slug": "e/ai-advocacy-policy-sep-3",
+    "tag": "mobile",
+    "pct": 0,
+    "worstSeg": 0
+  },
+  {
+    "slug": "e/ai-patient-education-aug-26",
+    "tag": "desktop",
+    "pct": 0,
+    "worstSeg": 0
+  },
+  {
+    "slug": "e/ai-patient-education-aug-26",
+    "tag": "mobile",
+    "pct": 0,
+    "worstSeg": 0
+  },
+  {
+    "slug": "e/ai-patient-education-aug-28",
+    "tag": "desktop",
+    "pct": 0,
+    "worstSeg": 0
+  },
+  {
+    "slug": "e/ai-patient-education-aug-28",
+    "tag": "mobile",
+    "pct": 0,
+    "worstSeg": 0
+  },
+  {
+    "slug": "e/ai-patient-education-sep-3",
+    "tag": "desktop",
+    "pct": 0,
+    "worstSeg": 0
+  },
+  {
+    "slug": "e/ai-patient-education-sep-3",
+    "tag": "mobile",
+    "pct": 0,
+    "worstSeg": 0
+  },
+  {
+    "slug": "e/building-ai-agents-aug-26",
+    "tag": "desktop",
+    "pct": 0,
+    "worstSeg": 0
+  },
+  {
+    "slug": "e/building-ai-agents-aug-26",
+    "tag": "mobile",
+    "pct": 0,
+    "worstSeg": 0
+  },
+  {
+    "slug": "e/building-ai-agents-sep-1",
+    "tag": "desktop",
+    "pct": 0,
+    "worstSeg": 0
+  },
+  {
+    "slug": "e/building-ai-agents-sep-1",
+    "tag": "mobile",
+    "pct": 0,
+    "worstSeg": 0
+  },
+  {
+    "slug": "e/building-ai-agents-sep-3",
+    "tag": "desktop",
+    "pct": 0,
+    "worstSeg": 0
+  },
+  {
+    "slug": "e/building-ai-agents-sep-3",
+    "tag": "mobile",
+    "pct": 0,
+    "worstSeg": 0
+  },
+  {
+    "slug": "privacy",
+    "tag": "desktop",
+    "pct": 0,
+    "worstSeg": 0
+  },
+  {
+    "slug": "privacy",
+    "tag": "mobile",
+    "pct": 0,
+    "worstSeg": 0
+  }
+]
