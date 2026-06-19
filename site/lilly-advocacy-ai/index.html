@@ -1,0 +1,786 @@
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="utf-8">
+<!-- Google tag (gtag.js) -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-HE4MQ35NWE"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-HE4MQ35NWE');
+</script>
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Advocacy AI Training Series</title>
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=DM+Serif+Display:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap');
+
+:root{
+  --coral:#F18479; --coral-dark:#E06B5F; --coral-text:#C2503F;
+  /* Classic brand coral used for filled buttons/CTAs */
+  --coral-btn:#F18479; --coral-btn-hover:#E06B5F;
+  --navy:#1B2A4A; --navy-dark:#0F1A2E;
+  --cream:#FAF8F5; --orange-50:#FFF7ED;
+  --g100:#F3F4F6; --g200:#E5E7EB; --g300:#D1D5DB; --g400:#9CA3AF; --g500:#6B7280; --g700:#374151;
+  --font-sans:'DM Sans',system-ui,-apple-system,'Segoe UI',sans-serif;
+  --font-serif:'DM Serif Display',Georgia,serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--font-sans);color:var(--g700);background:#fff;line-height:1.6;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+.material-symbols-outlined{font-family:'Material Symbols Outlined';font-weight:normal;font-style:normal;line-height:1;vertical-align:middle;display:inline-block;overflow:hidden;width:1em;white-space:nowrap}
+/* Screen-reader only */
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+/* Skip link */
+.skip-link{position:absolute;left:8px;top:-48px;z-index:200;background:var(--navy-dark);color:#fff;padding:10px 16px;border-radius:8px;font-weight:700;font-size:14px;transition:top .15s}
+.skip-link:focus{top:8px;color:#fff}
+/* Visible focus indicator (keyboard only) */
+:focus-visible{outline:3px solid #FDBA74;outline-offset:2px;border-radius:4px}
+.section.navy :focus-visible,.hero :focus-visible,nav :focus-visible{outline-color:#FDBA74}
+h1,h2,h3{font-family:var(--font-serif);color:var(--navy);font-weight:400;line-height:1.13;letter-spacing:-0.01em}
+.eyebrow{display:inline-block;font-size:12px;letter-spacing:.15em;text-transform:uppercase;color:var(--coral-text);font-weight:700;font-family:var(--font-sans);margin-bottom:14px}
+.section.navy .eyebrow,.hero .eyebrow{color:var(--coral)}
+.wrap{max-width:1100px;margin:0 auto;padding:0 24px}
+a{color:var(--coral-text);text-decoration:none}a:hover{color:var(--coral-dark)}
+section[id]{scroll-margin-top:90px}
+
+/* NAV */
+nav{position:fixed;top:0;left:0;right:0;height:84px;background:#101A2E;backdrop-filter:blur(8px);z-index:50;display:flex;align-items:center;border-bottom:1px solid rgba(255,255,255,.08);transition:box-shadow .3s}
+nav.scrolled{box-shadow:0 6px 24px rgba(0,0,0,.22)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;width:100%;gap:18px}
+nav .brand{display:flex;align-items:center;gap:16px;min-width:0}
+nav .brand img{height:36px;width:auto;display:block}
+nav .brand .sep,nav .right .sep{width:1px;height:30px;background:rgba(255,255,255,.18);flex:none}
+nav .brand .series{color:#fff;font-size:14.5px;font-weight:600;line-height:1.2;white-space:nowrap}
+nav .right{display:flex;align-items:center;gap:20px}
+nav .nav-credit{color:rgba(255,255,255,.78);font-size:12.5px;font-weight:500;white-space:nowrap}
+nav .nav-credit strong{color:#fff;font-weight:700}
+/* Lilly co-brand lockup in nav: muted label + supplied logo asset, secondary to hello EIKO */
+nav .lilly-lockup{display:flex;align-items:center;gap:9px;white-space:nowrap}
+nav .lilly-lockup .lbl{color:rgba(255,255,255,.82);font-size:12.5px;font-weight:500}
+nav .lilly-lockup img{height:18px;width:auto;display:block}
+/* If the supplied file is not a light/reversed variant, this white chip keeps it legible on navy without recoloring the logo itself. Add the .on-chip class to the lockup to enable. */
+nav .lilly-lockup.on-chip .logo-wrap{background:#fff;border-radius:6px;padding:5px 8px;display:inline-flex;align-items:center}
+nav .links{display:flex;gap:4px;align-items:center;white-space:nowrap}
+nav .links a{font-family:var(--font-sans);color:#fff;font-size:15.5px;font-weight:500;padding:10px 15px;border-radius:8px;transition:all .15s}
+nav .links a:hover{color:#fff;background:rgba(255,255,255,.07)}
+/* Nav Register button: classic brand coral, matching the main Register button (covers both <a> and <button>) */
+nav .links a.reg,nav .links button.reg,nav .reg{font-family:var(--font-sans);font-size:15.5px;font-weight:600;background:var(--coral-btn);color:#fff;border:none;cursor:pointer;padding:10px 18px;border-radius:8px;transition:all .15s}
+nav .links a.reg:hover,nav .links button.reg:hover,nav .reg:hover{background:var(--coral-btn-hover);color:#fff}
+
+main{padding-top:84px}
+
+/* BUTTONS */
+.btn{display:inline-flex;align-items:center;gap:8px;font-family:var(--font-sans);font-weight:600;font-size:15px;border-radius:8px;padding:14px 28px;cursor:pointer;border:none;transition:all .22s;text-align:center}
+.btn .material-symbols-outlined{font-size:19px;transition:transform .22s}
+.btn-primary{background:var(--coral-btn);color:#fff;box-shadow:0 8px 20px rgba(241,132,121,.28)}
+.btn-primary:hover{background:var(--coral-btn-hover);color:#fff;transform:translateY(-2px)}
+.btn-primary:hover .material-symbols-outlined{transform:translateX(3px)}
+.btn-ghost{background:transparent;color:#fff;border:1.5px solid rgba(255,255,255,.25)}
+.btn-ghost:hover{border-color:var(--coral);color:var(--coral)}
+/* Keep Luma's injected checkout buttons styled as the EIKO coral primary (modal date buttons + any .btn-styled ones) */
+.btn.luma-checkout--button,
+.reg-date .luma-checkout--button{background:var(--coral-btn)!important;color:#fff!important;border:none!important;box-shadow:0 8px 20px rgba(241,132,121,.28)!important;font-family:var(--font-sans)!important;font-weight:600!important;font-size:15px!important;border-radius:8px!important;padding:14px 28px!important;line-height:1.2!important;display:inline-flex!important;align-items:center!important;justify-content:center!important;text-decoration:none!important;cursor:pointer!important;transition:background .22s,transform .22s!important}
+.btn.luma-checkout--button:hover,
+.reg-date .luma-checkout--button:hover{background:var(--coral-btn-hover)!important;color:#fff!important;transform:translateY(-2px)}
+
+/* SECTIONS */
+.section{padding:88px 0}
+.section.cream{background:var(--cream)}
+.section.navy{background:var(--navy);color:#fff}
+.section.navy h2,.section.navy h3{color:#fff}
+.shead{max-width:680px;margin-bottom:46px}
+.shead h2{font-size:38px;margin:6px 0 12px}
+.shead p{font-size:17px;color:var(--g500)}
+.section.navy .shead p{color:rgba(255,255,255,.72)}
+
+/* credit pill */
+.lilly-credit{display:inline-flex;align-items:center;gap:7px;border-radius:9999px;padding:5px 14px 5px 12px;font-size:12px;font-weight:600;background:rgba(255,255,255,.10);border:1px solid rgba(255,255,255,.18);color:#fff}
+.lilly-credit .dot{width:7px;height:7px;border-radius:50%;background:var(--coral)}
+.lilly-credit span{color:rgba(255,255,255,.65);font-weight:500}
+
+/* HERO */
+.hero{background:var(--navy);color:#fff;position:relative;overflow:hidden;padding:96px 0 104px}
+/* Mobile: navy hero fills to bottom of the phone screen via dynamic viewport height */
+@supports (min-height:100svh){
+  @media(max-width:760px){
+    .hero{min-height:100dvh;display:flex;align-items:center;padding-top:40px;padding-bottom:40px}
+  }
+}
+.hero .glow{position:absolute;width:620px;height:620px;border-radius:50%;background:radial-gradient(circle,rgba(241,132,121,.16),transparent 60%);top:-190px;right:-150px;filter:blur(40px)}
+.hero .wrap{position:relative;z-index:2}
+.hero .credit-row{margin-bottom:22px}
+/* Hero eyebrow + Lilly credit row */
+.hero-credit-row{display:flex;align-items:center;flex-wrap:wrap;gap:16px;margin-bottom:28px}
+.hero-eyebrow{font-size:17px;letter-spacing:.18em;margin-bottom:0}
+.hero-divider{width:1px;height:24px;background:rgba(255,255,255,.28);flex:none}
+/* Sponsor + presenter lockup: "Brought to you by [Lilly] delivered by [hello EIKO]" */
+.hero-lockup{display:inline-flex;align-items:center;flex-wrap:wrap;gap:11px}
+.hero-lockup .lbl{color:rgba(255,255,255,.82);font-size:13.5px;font-weight:500;white-space:nowrap}
+/* White Lilly logo sits directly on navy hero; no white chip needed. Reference mark; do not recolor/crop/stretch. */
+/* Lilly box includes the 'A MEDICINE COMPANY' tagline below the wordmark, so plain flex centering sits the wordmark high vs the eiko mark. translateY nudges the chip down so the two WORDMARKS share a centerline. Pure vertical shift, no scale/crop/recolor. */
+.hero-lockup .logo-chip{display:inline-flex;align-items:center;transform:translateY(11px)}
+.hero-lockup .logo-chip img{height:46px;width:auto;display:block}
+/* hello EIKO trimmed wordmark (eiko-wordmark-trimmed.png, padding removed) sized so its visible height matches the Lilly WORDMARK (Lilly box includes the 'A MEDICINE COMPANY' tagline ~17% of its height, so eiko height = 46 * 435/524 / 0.939 ~= 41px). Same centerline via align-items:center on the lockup. */
+.hero-lockup .eiko-mark{height:41px;width:auto;display:block}
+.hero h1{font-size:52px;color:#fff;margin:16px 0 20px;max-width:780px}
+.hero h1 em{font-style:italic;color:var(--coral)}
+.hero p.lead{font-size:18px;color:rgba(255,255,255,.80);max-width:560px;margin-bottom:30px}
+.hero .ctas{display:flex;gap:12px;flex-wrap:wrap}
+.hero .stats{display:flex;gap:36px;margin-top:44px;flex-wrap:wrap}
+.hero .stats .stat .n{font-family:var(--font-serif);font-size:32px;color:var(--coral);line-height:1}
+.hero .stats .stat .l{font-size:13px;color:rgba(255,255,255,.82);margin-top:7px}
+
+/* PROGRAM STEPS */
+.steps{display:flex;flex-direction:column;gap:22px}
+.pstep{display:grid;grid-template-columns:108px 1fr;background:#fff;border:1px solid var(--g200);border-radius:18px;overflow:hidden;box-shadow:0 1px 3px rgba(0,0,0,.04);transition:all .25s}
+.pstep:hover{box-shadow:0 18px 44px rgba(27,42,74,.10);border-color:var(--coral);transform:translateY(-3px)}
+.pstep .left{background:var(--navy);color:#fff;padding:30px 22px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center}
+.pstep .left .sn{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.82);font-weight:600}
+.pstep .left .num{font-family:var(--font-serif);font-size:52px;color:var(--coral);line-height:1;margin-top:4px}
+.pstep .left .material-symbols-outlined{font-size:28px;color:rgba(255,255,255,.75);margin-top:12px}
+.pstep .right{padding:28px 32px}
+.pstep .right .tag{font-size:11.5px;font-weight:700;letter-spacing:.05em;color:var(--coral-text);margin-bottom:8px;text-transform:uppercase}
+.pstep .right h3{font-size:25px;margin-bottom:10px}
+.pstep .right p{font-size:15px;color:var(--g700);margin-bottom:0}
+.pstep .right .feat{font-size:13px;margin-top:16px;display:flex;flex-wrap:wrap;gap:8px}
+.pstep .right .feat span{background:var(--cream);border:1px solid var(--g200);border-radius:9999px;padding:5px 13px;font-weight:600;color:var(--navy)}
+
+/* Workshop list: equal cards with icon tile, keyword pills, date chips, Register. Grouped into categories. */
+.wlist{display:flex;flex-direction:column;gap:18px}
+.wcat{margin:38px 0 2px}
+.wcat:first-of-type{margin-top:8px}
+.wcat h3{font-size:19px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--navy);margin:0 0 8px;padding-bottom:9px;border-bottom:2px solid var(--g200)}
+.wcat .wcat-sub{font-size:13.5px;color:var(--g700);margin:5px 0 0}
+.witem{display:grid;grid-template-columns:64px 1fr auto;gap:26px;align-items:start;background:#fff;border:1px solid var(--g200);border-radius:18px;padding:26px 28px;box-shadow:0 1px 3px rgba(0,0,0,.04);transition:all .25s}
+.witem:hover{box-shadow:0 18px 44px rgba(27,42,74,.10);border-color:var(--coral);transform:translateY(-3px)}
+.w-icon{width:64px;height:64px;border-radius:16px;background:var(--navy);display:flex;align-items:center;justify-content:center;flex:none;transition:background .25s}
+.w-icon .material-symbols-outlined{font-size:30px;color:var(--coral);transition:color .25s}
+.witem:hover .w-icon{background:var(--coral-btn)}
+.witem:hover .w-icon .material-symbols-outlined{color:#fff}
+.w-icon--logo{background:#fff;border:1px solid var(--g200)}
+.w-icon--logo img{width:34px;height:34px;object-fit:contain;display:block}
+.witem:hover .w-icon--logo{background:#fff}
+.w-deepdives{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.w-deepdives .witem{margin:0}
+/* Grouped panel: intro + 4 platform cards read as one connected unit */
+.w-platform-group{background:#fff;border:1px solid var(--g200);border-left:4px solid var(--coral);border-radius:18px;padding:24px;box-shadow:0 1px 3px rgba(0,0,0,.04)}
+.w-platform-group .wcard{background:var(--cream)}
+/* Shared intro sits flush at the top of the group (no own border/box) */
+.w-platform-intro{display:grid;grid-template-columns:64px 1fr;gap:26px;align-items:start;padding:4px 4px 20px;margin-bottom:20px;border-bottom:1px solid var(--g200)}
+.w-platform-intro .w-info h3{margin-bottom:7px}
+/* Compact platform card: logo on top, name, date, Register */
+.wcard{display:flex;flex-direction:column;align-items:flex-start;gap:12px;background:#fff;border:1px solid var(--g200);border-radius:18px;padding:24px 22px;box-shadow:0 1px 3px rgba(0,0,0,.04);transition:all .25s}
+.wcard:hover{box-shadow:0 18px 44px rgba(27,42,74,.10);border-color:var(--coral);transform:translateY(-3px)}
+.wcard h4{font-size:17px;color:var(--navy);margin:0;line-height:1.3}
+.wcard .w-date{margin-top:-2px}
+.wcard .w-cap{margin-top:0}
+.wcard .btn-mini{margin-top:auto;align-self:stretch;justify-content:center}
+.wcard-meta{display:flex;flex-direction:column;gap:8px;width:100%;margin-top:2px}
+.w-info{min-width:0}
+.w-info .tag{font-size:11.5px;font-weight:700;letter-spacing:.05em;color:var(--coral-text);margin-bottom:6px;text-transform:uppercase}
+.w-info h3{font-size:22px;margin-bottom:7px}
+.w-info p{font-size:14.5px;color:var(--g700);margin:0;max-width:560px;line-height:1.55}
+.w-meta{flex:none;display:flex;flex-direction:column;align-items:flex-end;gap:14px}
+.w-dates{display:flex;flex-direction:column;gap:7px;align-items:flex-end}
+.w-date{display:inline-flex;align-items:center;gap:5px;font-size:12.5px;font-weight:500;color:var(--g500);white-space:nowrap}
+.w-date .material-symbols-outlined{font-size:14px;color:var(--g500)}
+.w-cap{display:inline-flex;align-items:center;gap:6px;font-size:11.5px;font-weight:700;letter-spacing:.03em;color:var(--navy);white-space:nowrap;text-transform:uppercase}
+.w-cap .material-symbols-outlined{font-size:14px;color:var(--coral-text)}
+.btn-mini{flex:none;display:inline-flex;align-items:center;gap:6px;font-size:13.5px;font-weight:600;color:#fff;background:var(--coral-btn);border:none;border-radius:8px;padding:9px 17px;white-space:nowrap;box-shadow:0 6px 14px rgba(241,132,121,.25);transition:all .15s}
+.btn-mini .material-symbols-outlined{font-size:16px;transition:transform .15s}
+.btn-mini:hover{background:var(--coral-btn-hover);color:#fff;transform:translateY(-1px)}
+.btn-mini:hover .material-symbols-outlined{transform:translateX(2px)}
+
+/* WHY THIS MATTERS / EVIDENCE */
+.evidence{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.ecard{background:#fff;border:1px solid var(--g200);border-radius:18px;padding:28px 26px;box-shadow:0 1px 3px rgba(0,0,0,.04);display:flex;flex-direction:column;transition:all .25s}
+.ecard:hover{box-shadow:0 18px 44px rgba(27,42,74,.10);border-color:var(--coral);transform:translateY(-3px)}
+.ecard .material-symbols-outlined{font-size:30px;color:var(--coral);margin-bottom:14px}
+.ecard .blabel{font-family:var(--font-serif);color:var(--navy);font-size:19px;line-height:1.15;margin-bottom:8px}
+.ecard p{font-size:15px;color:var(--g700);margin:0 0 16px}
+.ecard .src{font-size:12.5px;color:var(--g500);font-style:italic;margin-top:auto;border-top:1px solid var(--g100);padding-top:12px}
+@media(max-width:760px){.evidence{grid-template-columns:1fr}}
+
+/* LEADERSHIP / FOUNDERS */
+.leadership{margin-top:64px}
+.lead-head{margin-bottom:48px}
+.lead-head h3{font-size:38px;margin-top:6px}
+.profiles{display:grid;grid-template-columns:repeat(2,1fr);gap:48px;max-width:900px}
+.profile .pic{width:128px;height:128px;border-radius:50%;object-fit:cover;display:block;margin-bottom:22px;background:var(--g100)}
+.profile h4{font-family:var(--font-serif);color:var(--navy);font-weight:400;font-size:26px;line-height:1.13;letter-spacing:-0.01em;margin-bottom:6px}
+.profile .role{color:var(--coral-text);font-weight:600;font-size:15px;margin-bottom:14px}
+.profile .tags{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:16px}
+.profile .tags span{background:var(--g100);border:1px solid var(--g200);border-radius:9999px;padding:5px 13px;font-size:11.5px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--g500)}
+.profile .pbio{font-size:15px;color:var(--g700);margin:0}
+@media(max-width:760px){.profiles{grid-template-columns:1fr;gap:40px}}
+
+/* SUBMIT A QUESTION LINK */
+.q-link{margin-top:18px}
+.q-link a{font-size:14px;font-weight:600;color:rgba(255,255,255,.78);border-bottom:1px solid rgba(255,255,255,.25);padding-bottom:1px}
+.q-link a:hover{color:#fff;border-color:#fff}
+
+/* DATES */
+.note{font-size:13px;color:var(--g500);margin-top:8px}
+.dates{display:flex;flex-direction:column;gap:20px}
+.dcard{background:#fff;border:1px solid var(--g200);border-radius:16px;padding:26px 28px;box-shadow:0 1px 3px rgba(0,0,0,.04)}
+.dcard .dhead{display:flex;align-items:baseline;justify-content:space-between;gap:14px;flex-wrap:wrap;margin-bottom:6px}
+.dcard h3{font-size:21px}
+.dcard .meta{font-size:12.5px;font-weight:600;color:var(--coral-text)}
+.dcard .dsub{font-size:14px;color:var(--g500);margin-bottom:16px}
+.dlist{display:flex;flex-direction:column;gap:2px}
+.drow{display:flex;align-items:center;gap:12px;padding:11px 0;border-top:1px solid var(--g100)}
+.drow .material-symbols-outlined{font-size:18px;color:var(--coral)}
+.drow .ph{font-weight:600;color:var(--navy);font-size:15px;background:var(--orange-50);border:1px dashed var(--coral);border-radius:7px;padding:3px 10px}
+.drow .meta2{font-size:13px;color:var(--g500)}
+.drow.tbd .ph{background:var(--g100);border-style:solid;border-color:var(--g200);color:var(--g500)}
+
+/* REGISTER */
+.reg-wrap{max-width:620px;margin:0 auto;text-align:center}
+.reg-wrap p.lead{font-size:17px;color:rgba(255,255,255,.78);margin:0 auto 28px;max-width:480px}
+.placeholder-tag{display:inline-block;margin-top:18px;font-size:12px;color:rgba(255,255,255,.45);letter-spacing:.04em}
+
+/* FOOTER */
+footer{background:var(--navy-dark);color:rgba(255,255,255,.82);padding:46px 0}
+footer .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap}
+footer .fbrand{display:flex;align-items:center;gap:13px}
+footer .fbrand img{height:26px;width:auto}
+footer .fbrand .fc{font-size:12.5px}
+footer .fbrand .fc strong{color:#fff;font-weight:700}
+footer .flinks{font-size:13px;display:flex;gap:20px;align-items:center}
+footer .flinks a{color:rgba(255,255,255,.82)}
+footer .flinks a:hover{color:#fff}
+
+/* fade-up */
+.fade-up{opacity:0;transform:translateY(20px);transition:opacity .6s cubic-bezier(0,0,.2,1),transform .6s cubic-bezier(0,0,.2,1)}
+.fade-up.show{opacity:1;transform:translateY(0)}
+
+@media(max-width:760px){
+  /* Keep the collapsed bar compact so the larger desktop sizing does not eat the hero viewport */
+  nav{height:64px}
+  main{padding-top:64px}
+  nav .brand img{height:30px}
+  nav .brand .series{font-size:13px}
+  nav .links a:not(.reg){display:none}
+  nav .nav-credit{display:none}
+  nav .lilly-lockup,nav .right .sep{display:none}
+  .hero h1{font-size:34px;margin:14px 0 16px}
+  .hero-credit-row{gap:10px;margin-bottom:20px;justify-content:center}
+  .hero-eyebrow{font-size:15px}
+  .hero-divider{display:none}
+  .hero-lockup{justify-content:center;row-gap:8px}
+  /* Match the desktop centerline nudge, scaled to mobile chip height (8 * 22/46 ~= 4px) */
+  .hero-lockup .logo-chip{transform:translateY(4px)}
+  .hero-lockup .logo-chip img{height:22px}
+  /* Keep the same wordmark-matched ratio on mobile: 22 * 435/524 / 0.939 ~= 20px */
+  .hero-lockup .eiko-mark{height:20px}
+  /* Mobile only: center the hook paragraph; desktop stays left-aligned */
+  .hero h1{max-width:100%}
+  .hero p.lead{text-align:center;margin-left:auto;margin-right:auto;max-width:100%;font-size:16px;margin-bottom:24px}
+  .hero .ctas{justify-content:center}
+  .shead h2{font-size:30px}
+  .pstep{grid-template-columns:1fr}
+  .pstep .left{flex-direction:row;gap:14px;padding:18px 22px;justify-content:flex-start}
+  .pstep .left .num{font-size:34px;margin-top:0}
+  .pstep .left .material-symbols-outlined{margin-top:0}
+  /* Workshop cards: stack icon, info, dates, and button on small screens */
+  .witem{grid-template-columns:1fr;gap:16px;padding:22px 20px}
+  .w-deepdives{grid-template-columns:repeat(2,1fr)}
+  .w-platform-intro{grid-template-columns:52px 1fr;gap:16px;padding:22px 20px}
+  .w-icon{width:52px;height:52px;border-radius:13px}
+  .w-icon .material-symbols-outlined{font-size:25px}
+  .w-icon--logo img{width:28px;height:28px}
+  .w-meta{align-items:flex-start;gap:12px}
+  .w-dates{flex-direction:row;flex-wrap:wrap;gap:8px;align-items:flex-start}
+}
+
+/* ASK FORM */
+.ask-form-container{margin-top: 40px; text-align: left; background: rgba(255,255,255,.05); border: 1px solid rgba(255,255,255,.15); border-radius: 12px; padding: 30px;}
+.ask-form-container h3{color: #fff; font-size: 20px; margin-bottom: 16px; font-family: var(--font-sans); font-weight: 600; letter-spacing: -0.01em;}
+.ask-form-container input, .ask-form-container textarea{width: 100%; background: rgba(255,255,255,.1); border: 1px solid rgba(255,255,255,.2); color: #fff; padding: 12px 16px; border-radius: 8px; margin-bottom: 12px; font-family: var(--font-sans); font-size: 15px; transition: border-color 0.2s;}
+.ask-form-container input::placeholder, .ask-form-container textarea::placeholder{color: rgba(255,255,255,.45);}
+.ask-form-container input:focus-visible, .ask-form-container textarea:focus-visible{outline: 3px solid #FDBA74; outline-offset: 2px; border-color: var(--coral);}
+.ask-form-container button{width: 100%; justify-content: center; margin-top: 4px;}
+
+/* Responsive Overrides */
+.mobile-menu-btn { display: none; color: #fff; cursor: pointer; }
+@media(max-width: 900px) {
+  nav .links a { padding: 8px 10px; font-size: 13px; }
+  .profiles { grid-template-columns: 1fr; }
+}
+@media(max-width: 760px) {
+  .hide-mob { display: none !important; }
+  .show-mob-inline { display: inline-block !important; }
+  .mobile-menu-btn { display: block; margin-left: 8px; }
+  nav .brand .series { display: none; } /* give more space to logo + button */
+  
+  nav .links { position: absolute; top: 64px; left: 0; right: 0; background: var(--navy-dark); flex-direction: column; padding: 16px 24px; gap: 8px; display: none; border-bottom: 1px solid rgba(255,255,255,.1); box-shadow: 0 10px 20px rgba(0,0,0,0.2); }
+  nav .links.mobile-open { display: flex; }
+  nav .links a.mlink { display: block; width: 100%; text-align: left; padding: 13px 16px; font-size: 16px; border-radius: 8px; background: rgba(255,255,255,.05); }
+  /* Mobile in-bar Register stays classic coral and tap-friendly */
+  nav .reg.show-mob-inline { background: var(--coral-btn); color:#fff; }
+  
+  .evidence { grid-template-columns: 1fr; }
+  .stats { flex-direction: column; gap: 16px; }
+  footer .wrap { flex-direction: column; align-items: flex-start; }
+  footer .flinks { flex-wrap: wrap; gap: 12px; }
+  
+  /* Already in CSS but ensuring it */
+  .pstep { grid-template-columns: 1fr; }
+}
+
+/* Mobile menu toggle button (accessible) */
+.mobile-menu-btn{background:transparent;border:none;padding:6px;border-radius:8px;align-items:center;justify-content:center}
+
+/* Ask form labels */
+.ask-form-container .field{margin-bottom:14px}
+.ask-form-container label{display:block;color:#fff;font-size:14px;font-weight:600;margin-bottom:6px}
+.ask-form-container .req{color:#FDBA74;margin-left:2px}
+.ask-form-container input,.ask-form-container textarea{margin-bottom:0}
+#ask-status[data-state="success"]{color:#BBF7D0}
+#ask-status[data-state="error"]{color:#FCA5A5}
+
+/* Real (non-placeholder) date label in the dates list */
+.drow .dwhen{font-weight:600;color:var(--navy);font-size:15px}
+
+/* REGISTER MODAL */
+.reg-modal{position:fixed;inset:0;z-index:1000;display:flex;align-items:center;justify-content:center;padding:24px}
+.reg-modal[hidden]{display:none}
+.reg-modal__backdrop{position:absolute;inset:0;background:rgba(15,26,46,.62);backdrop-filter:blur(2px)}
+.reg-modal__dialog{position:relative;z-index:1;width:100%;max-width:460px;max-height:calc(100dvh - 48px);overflow-y:auto;background:var(--cream);border-radius:18px;box-shadow:0 30px 70px rgba(15,26,46,.45);padding:34px 30px 30px;animation:regpop .22s cubic-bezier(0,0,.2,1)}
+@keyframes regpop{from{opacity:0;transform:translateY(12px) scale(.98)}to{opacity:1;transform:none}}
+.reg-modal__close{position:absolute;top:14px;right:14px;width:40px;height:40px;border:none;background:transparent;border-radius:10px;color:var(--navy);cursor:pointer;display:inline-flex;align-items:center;justify-content:center;transition:background .15s}
+.reg-modal__close:hover{background:rgba(27,42,74,.08)}
+.reg-modal__close .material-symbols-outlined{font-size:24px}
+.reg-modal__title{font-family:var(--font-serif);color:var(--navy);font-size:27px;line-height:1.13;margin:0 36px 8px 0;font-weight:400}
+.reg-modal__sub{font-size:14.5px;color:var(--g500);margin:0 0 22px}
+.reg-modal__dates{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:14px}
+.reg-date{display:flex;align-items:center;justify-content:space-between;gap:16px;background:#fff;border:1px solid var(--g200);border-radius:14px;padding:16px 18px}
+.reg-date__when{display:flex;flex-direction:column;gap:2px;min-width:0}
+.reg-date__day{font-weight:700;color:var(--navy);font-size:15px}
+.reg-date__time{font-size:13px;color:var(--g500)}
+.reg-date .luma-checkout--button{flex:none;padding:11px 20px!important;font-size:14px!important;box-shadow:none!important}
+.reg-date .luma-checkout--button:hover{transform:translateY(-1px)!important}
+/* Scroll-lock applied to <html> while modal is open */
+html.reg-modal-open,html.reg-modal-open body{overflow:hidden}
+@media(max-width:560px){
+  .w-deepdives{grid-template-columns:1fr}
+  .reg-modal{padding:0;align-items:flex-end}
+  .reg-modal__dialog{max-width:100%;max-height:92dvh;border-radius:20px 20px 0 0;padding:30px 20px 24px}
+  .reg-modal__title{font-size:24px}
+  .reg-date{flex-direction:column;align-items:stretch;gap:12px}
+  .reg-date__when{align-items:flex-start}
+  .reg-date .luma-checkout--button{width:100%;padding:14px 20px!important;font-size:15px!important}
+}
+
+/* Reduced motion: disable scroll fade-in and transitions/transforms */
+@media (prefers-reduced-motion: reduce){
+  *,*::before,*::after{animation-duration:.001ms !important;animation-iteration-count:1 !important;transition-duration:.001ms !important;scroll-behavior:auto !important}
+  .fade-up{opacity:1 !important;transform:none !important}
+  .pstep:hover,.ecard:hover,.btn-primary:hover{transform:none !important}
+}
+</style>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header>
+<nav id="nav" aria-label="Primary" class="">
+  <div class="wrap">
+    <div class="brand">
+      <img src="/eiko-logo-transparent.png" alt="hello EIKO logo">
+      <div class="sep" aria-hidden="true"></div>
+      <div class="series">Advocacy AI Training Series</div>
+    </div>
+    <div class="right">
+      <div class="links" id="nav-links">
+        <a href="#overview" class="mlink">Overview</a>
+        <a href="#workshops" class="mlink">Workshops</a>
+        <a href="#about" class="mlink">About</a>
+        <a href="#register" class="mlink">Contact</a>
+        <a href="#workshops" class="reg hide-mob">Register</a>
+      </div>
+      <a href="#workshops" class="reg show-mob-inline" style="display:none; background:var(--coral-btn); color:#fff; padding:6px 12px; border-radius:6px; font-weight:600; font-size:13px; border:none; cursor:pointer; text-decoration:none;">Register</a>
+      <button type="button" class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+        <span class="material-symbols-outlined" aria-hidden="true">menu</span>
+      </button>
+    </div>
+  </div>
+</nav>
+</header>
+
+<main id="main">
+
+<!-- HERO / OVERVIEW -->
+<section id="overview">
+  <div class="hero">
+    <div class="glow" aria-hidden="true"></div>
+    <div class="wrap">
+      <div class="hero-credit-row">
+        <span class="eyebrow hero-eyebrow">AI Training Series</span>
+        <span class="hero-divider" aria-hidden="true"></span>
+        <span class="hero-lockup">
+          <span class="lbl">Brought to you by</span>
+          <span class="logo-chip"><img src="/lilly-logo-white.png" alt="Eli Lilly"></span>
+          <span class="lbl">delivered by</span>
+          <img class="eiko-mark" src="/eiko-wordmark-trimmed.png" alt="hello EIKO">
+        </span>
+      </div>
+      <h1>Build the confidence to use AI in <em>mission-driven work.</em></h1>
+      <p class="lead">A practical training series for teams across the advocacy community. Start with shared foundations, then move into hands-on practice on the work you do every day.</p>
+      <div class="ctas">
+        <a href="#workshops" class="btn btn-primary">Register <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span></a>
+        <a class="btn btn-ghost" href="#workshops">See the workshops</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WORKSHOPS -->
+<section id="workshops" class="section cream">
+  <div class="wrap">
+    <div class="shead fade-up show">
+      <span class="eyebrow">The workshops</span>
+      <h2>Choose the sessions that fit. Register to hold your spot.</h2>
+      <p>One hour. Virtual. Each session stands alone. Start with AI Fundamentals and a deep dive into your platform of choice, then add the topic-focused sessions that fit most with the work that you do. All times U.S. Eastern.</p>
+    </div>
+    <div class="wlist">
+
+      <div class="wcat fade-up show">
+        <h3>Foundations Workshops</h3>
+        <p class="wcat-sub">Start here. Build a confident base, then get up and running on a specific tool. One hour each.</p>
+      </div>
+
+      <div class="witem fade-up show">
+        <div class="w-icon"><span class="material-symbols-outlined" aria-hidden="true">foundation</span></div>
+        <div class="w-info">
+          <div class="tag">Introduction · 1 hour</div>
+          <h3>AI Fundamentals</h3>
+          <p>Your starting point, no experience required. In one hour you will get a clear picture of how AI works, learn the core prompting techniques that make them useful, and see where human judgment and ethics fit in. Built to leave you confident and ready for the next step.</p>
+        </div>
+        <div class="w-meta">
+          <div class="w-dates">
+            <span class="w-date"><span class="material-symbols-outlined" aria-hidden="true">calendar_today</span>Tue, Aug 4 · 10am ET</span>
+            <span class="w-date"><span class="material-symbols-outlined" aria-hidden="true">calendar_today</span>Thu, Aug 6 · 12pm ET</span>
+            <span class="w-date"><span class="material-symbols-outlined" aria-hidden="true">calendar_today</span>Mon, Aug 17 · 10am ET</span>
+          </div>
+          <a class="btn-mini" href="/e/ai-foundations">Register <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span></a>
+        </div>
+      </div>
+
+      <div class="w-platform-group fade-up show">
+      <div class="w-platform-intro">
+        <div class="w-icon"><span class="material-symbols-outlined" aria-hidden="true">tune</span></div>
+        <div class="w-info">
+          <div class="tag">Foundations · 1 hour each</div>
+          <h3>Learn your AI platform</h3>
+          <p>Get fully up and running in the tool your team uses, and learn to use it with confidence. Each one-hour deep dive covers setup, how to customize the platform for your role and organization, the key features worth knowing, and the habits that save you real time every day. Pick the platform that fits your work.</p>
+        </div>
+      </div>
+
+      <div class="w-deepdives">
+      <div class="wcard fade-up show">
+        <div class="w-icon w-icon--logo"><img src="/tool-logos/gemini.svg" alt="Gemini"></div>
+        <h4>Gemini</h4>
+        <div class="wcard-meta">
+          <span class="w-date"><span class="material-symbols-outlined" aria-hidden="true">calendar_today</span>Tue, Aug 18 · 10am ET</span>
+          <span class="w-cap"><span class="material-symbols-outlined" aria-hidden="true">groups</span>Limited to 20</span>
+        </div>
+        <a class="btn-mini" href="/e/gemini-foundations">Register <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span></a>
+      </div>
+
+      <div class="wcard fade-up show">
+        <div class="w-icon w-icon--logo"><img src="/tool-logos/copilot.svg" alt="Microsoft Copilot"></div>
+        <h4>Microsoft Copilot</h4>
+        <div class="wcard-meta">
+          <span class="w-date"><span class="material-symbols-outlined" aria-hidden="true">calendar_today</span>Tue, Aug 18 · 12pm ET</span>
+          <span class="w-cap"><span class="material-symbols-outlined" aria-hidden="true">groups</span>Limited to 20</span>
+        </div>
+        <a class="btn-mini" href="/e/copilot-foundations">Register <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span></a>
+      </div>
+
+      <div class="wcard fade-up show">
+        <div class="w-icon w-icon--logo"><img src="/tool-logos/claude.svg" alt="Claude"></div>
+        <h4>Claude</h4>
+        <div class="wcard-meta">
+          <span class="w-date"><span class="material-symbols-outlined" aria-hidden="true">calendar_today</span>Thu, Aug 20 · 10am ET</span>
+          <span class="w-cap"><span class="material-symbols-outlined" aria-hidden="true">groups</span>Limited to 20</span>
+        </div>
+        <a class="btn-mini" href="/e/claude-foundations">Register <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span></a>
+      </div>
+
+      <div class="wcard fade-up show">
+        <div class="w-icon w-icon--logo"><img src="/tool-logos/chatgpt.svg" alt="ChatGPT"></div>
+        <h4>ChatGPT</h4>
+        <div class="wcard-meta">
+          <span class="w-date"><span class="material-symbols-outlined" aria-hidden="true">calendar_today</span>Thu, Aug 20 · 12pm ET</span>
+          <span class="w-cap"><span class="material-symbols-outlined" aria-hidden="true">groups</span>Limited to 20</span>
+        </div>
+        <a class="btn-mini" href="/e/chatgpt-foundations">Register <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span></a>
+      </div>
+      </div>
+      </div>
+
+      <div class="wcat fade-up show">
+        <h3>Topic-Focused Workshops</h3>
+        <p class="wcat-sub">Apply AI to a specific kind of work. One hour each. Choose the sessions that will help you and your team the most.</p>
+      </div>
+
+      <div class="witem fade-up show">
+        <div class="w-icon"><span class="material-symbols-outlined" aria-hidden="true">bolt</span></div>
+        <div class="w-info">
+          <div class="tag">Topic-Focused · 1 hour</div>
+          <h3>AI for Everyday Productivity</h3>
+          <p>Use AI to handle the tasks that eat up your week: meeting series summaries, finding and organizing your to do’s, crafting pre-reads and agendas and prepping for upcoming meetings. Built for lean teams that need to do more without adding staff.</p>
+        </div>
+        <div class="w-meta">
+          <div class="w-dates">
+            <span class="w-date"><span class="material-symbols-outlined" aria-hidden="true">calendar_today</span>Mon, Aug 24 · 10am ET</span>
+            <span class="w-date"><span class="material-symbols-outlined" aria-hidden="true">calendar_today</span>Wed, Aug 26 · 2pm ET</span>
+            <span class="w-date"><span class="material-symbols-outlined" aria-hidden="true">calendar_today</span>Tue, Sep 1 · 12pm ET</span>
+            <span class="w-cap"><span class="material-symbols-outlined" aria-hidden="true">groups</span>Limited to 20</span>
+          </div>
+          <a class="btn-mini" href="/e/ai-everyday-productivity">Register <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span></a>
+        </div>
+      </div>
+
+      <div class="witem fade-up show">
+        <div class="w-icon"><span class="material-symbols-outlined" aria-hidden="true">handshake</span></div>
+        <div class="w-info">
+          <div class="tag">Topic-Focused · 1 hour</div>
+          <h3>AI for Fundraising &amp; Partnerships</h3>
+          <p>Use AI to research prospects faster, customize existing deck or proposal templates, and personalize donor outreach. Built for development and partnership teams.</p>
+        </div>
+        <div class="w-meta">
+          <div class="w-dates">
+            <span class="w-date"><span class="material-symbols-outlined" aria-hidden="true">calendar_today</span>Mon, Aug 24 · 12pm ET</span>
+            <span class="w-date"><span class="material-symbols-outlined" aria-hidden="true">calendar_today</span>Fri, Aug 28 · 10am ET</span>
+            <span class="w-date"><span class="material-symbols-outlined" aria-hidden="true">calendar_today</span>Tue, Sep 1 · 2pm ET</span>
+            <span class="w-cap"><span class="material-symbols-outlined" aria-hidden="true">groups</span>Limited to 20</span>
+          </div>
+          <a class="btn-mini" href="/e/ai-fundraising-partnerships">Register <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span></a>
+        </div>
+      </div>
+
+      <div class="witem fade-up show">
+        <div class="w-icon"><span class="material-symbols-outlined" aria-hidden="true">account_balance</span></div>
+        <div class="w-info">
+          <div class="tag">Topic-Focused · 1 hour</div>
+          <h3>AI for Advocacy &amp; Policy</h3>
+          <p>Use AI to help your team track and respond to policy faster. Covers summarizing legislation, drafting comment letters and Hill briefing materials, and monitoring state-level bills.</p>
+        </div>
+        <div class="w-meta">
+          <div class="w-dates">
+            <span class="w-date"><span class="material-symbols-outlined" aria-hidden="true">calendar_today</span>Mon, Aug 24 · 2pm ET</span>
+            <span class="w-date"><span class="material-symbols-outlined" aria-hidden="true">calendar_today</span>Fri, Aug 28 · 12pm ET</span>
+            <span class="w-date"><span class="material-symbols-outlined" aria-hidden="true">calendar_today</span>Thu, Sep 3 · 10am ET</span>
+            <span class="w-cap"><span class="material-symbols-outlined" aria-hidden="true">groups</span>Limited to 20</span>
+          </div>
+          <a class="btn-mini" href="/e/ai-advocacy-policy">Register <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span></a>
+        </div>
+      </div>
+
+      <div class="witem fade-up show">
+        <div class="w-icon"><span class="material-symbols-outlined" aria-hidden="true">school</span></div>
+        <div class="w-info">
+          <div class="tag">Topic-Focused · 1 hour</div>
+          <h3>AI for Patient Education &amp; Content</h3>
+          <p>Use AI to turn complex clinical language into content patients can actually use. Learn to rewrite for plain language, adjust reading levels, and adapt clinical guidelines into accessible patient materials faster than ever before.</p>
+        </div>
+        <div class="w-meta">
+          <div class="w-dates">
+            <span class="w-date"><span class="material-symbols-outlined" aria-hidden="true">calendar_today</span>Wed, Aug 26 · 10am ET</span>
+            <span class="w-date"><span class="material-symbols-outlined" aria-hidden="true">calendar_today</span>Fri, Aug 28 · 2pm ET</span>
+            <span class="w-date"><span class="material-symbols-outlined" aria-hidden="true">calendar_today</span>Thu, Sep 3 · 12pm ET</span>
+            <span class="w-cap"><span class="material-symbols-outlined" aria-hidden="true">groups</span>Limited to 20</span>
+          </div>
+          <a class="btn-mini" href="/e/ai-patient-education">Register <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span></a>
+        </div>
+      </div>
+
+      <div class="witem fade-up show">
+        <div class="w-icon"><span class="material-symbols-outlined" aria-hidden="true">precision_manufacturing</span></div>
+        <div class="w-info">
+          <div class="tag">Topic-Focused · 1 hour</div>
+          <h3>Building AI Agents</h3>
+          <p>Move beyond basic prompting. Build AI agents tailored to your organization that can generate customized content, handle routine tasks, and deliver consistent output on demand. No technical background required.</p>
+        </div>
+        <div class="w-meta">
+          <div class="w-dates">
+            <span class="w-date"><span class="material-symbols-outlined" aria-hidden="true">calendar_today</span>Wed, Aug 26 · 12pm ET</span>
+            <span class="w-date"><span class="material-symbols-outlined" aria-hidden="true">calendar_today</span>Tue, Sep 1 · 10am ET</span>
+            <span class="w-date"><span class="material-symbols-outlined" aria-hidden="true">calendar_today</span>Thu, Sep 3 · 2pm ET</span>
+            <span class="w-cap"><span class="material-symbols-outlined" aria-hidden="true">groups</span>Limited to 20</span>
+          </div>
+          <a class="btn-mini" href="/e/building-ai-agents">Register <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span></a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section">
+  <div class="wrap">
+    <div class="shead fade-up show">
+      <span class="eyebrow">About</span>
+      <h2>About hello EIKO.</h2>
+      <p>hello EIKO is an AI consulting firm based in Alexandria, Virginia. We help mission-driven teams move from experimenting with AI to using it well, through hands-on training, practical tool building, and plain guidance. We are not here to talk you into AI. We are here to help you find where it earns its place in your work, where it does not belong, and how to tell the difference. This series is built in that spirit: short, practical, and honest about what these tools can and cannot do, and grounded in the real work advocacy teams do every day.</p>
+    </div>
+    <div class="leadership fade-up show">
+      <div class="lead-head">
+        <span class="eyebrow">Our founders</span>
+        <h3>Your instructors.</h3>
+      </div>
+      <div class="profiles">
+        <div class="profile">
+          <img class="pic" src="/curt-odar.webp" alt="Curt Odar">
+          <h4>Curt Odar</h4>
+          <p class="pbio">With over two decades of experience in product leadership and digital transformation, Curt combines executive-level insight with deep technological know-how, helping mission-driven organizations make the most of AI to advance the work that matters to them.</p>
+        </div>
+        <div class="profile">
+          <img class="pic" src="/eve-odar.webp" alt="Eve Koopmann Odar">
+          <h4>Eve Koopmann Odar</h4>
+          <p class="pbio">As a former CRO with expertise in sales, customer success, and strategic growth, Eve applies her executive insight and coaching experience to help teams confidently bring AI into their everyday work and see measurable results.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- REGISTER -->
+<section id="register" class="section navy">
+  <div class="wrap">
+    <div class="reg-wrap fade-up">
+      <span class="eyebrow">Contact</span>
+      <h2>Questions, Comments, or Concerns? Let us know.</h2>
+      <p class="lead">Send us a question and we will get back to you.</p>
+      
+      <div id="ask-form-container" class="ask-form-container fade-up">
+        <h3 id="ask-heading">Ask a question</h3>
+        <form id="ask-form" aria-labelledby="ask-heading" novalidate="">
+          <div class="field">
+            <label for="ask-name">Name <span class="req" aria-hidden="true">*</span></label>
+            <input type="text" id="ask-name" name="name" autocomplete="name" required="" aria-required="true">
+          </div>
+          <div class="field">
+            <label for="ask-email">Email <span class="req" aria-hidden="true">*</span></label>
+            <input type="email" id="ask-email" name="email" autocomplete="email" required="" aria-required="true">
+          </div>
+          <div class="field">
+            <label for="ask-question">Your question <span class="req" aria-hidden="true">*</span></label>
+            <textarea id="ask-question" name="question" rows="4" required="" aria-required="true"></textarea>
+          </div>
+          <button type="submit" class="btn btn-ghost" id="ask-submit">Send question</button>
+        </form>
+        <div id="ask-status" role="status" aria-live="polite" style="margin-top:12px;font-size:14px;min-height:1px;"></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="fbrand">
+      <img src="/eiko-logo-transparent.png" alt="hello EIKO logo">
+      <div class="fc">Advocacy AI Training Series<br>Brought to you by <strong>Eli Lilly</strong></div>
+    </div>
+    <div class="flinks">
+      <a href="/privacy">Privacy Policy</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+// nav shadow on scroll
+var nav=document.getElementById('nav');
+window.addEventListener('scroll',function(){nav.classList.toggle('scrolled',window.scrollY>20);});
+
+// fade-up on enter (respects reduced motion)
+var prefersReduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+if (prefersReduced) {
+  document.querySelectorAll('.fade-up').forEach(function(el){el.classList.add('show');});
+} else {
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('show');io.unobserve(e.target);}});},{threshold:.12});
+  document.querySelectorAll('.fade-up').forEach(function(el){io.observe(el);});
+}
+
+// Mobile menu toggle (accessible: aria-expanded, accessible name, Escape to close)
+var mbtn = document.getElementById('mobile-menu-btn');
+var mlinks = document.getElementById('nav-links');
+var mlinkItems = document.querySelectorAll('.mlink');
+function closeMenu(){
+  if(!mlinks) return;
+  mlinks.classList.remove('mobile-open');
+  if(mbtn){ mbtn.setAttribute('aria-expanded','false'); mbtn.setAttribute('aria-label','Open menu'); }
+}
+function openMenu(){
+  if(!mlinks) return;
+  mlinks.classList.add('mobile-open');
+  if(mbtn){ mbtn.setAttribute('aria-expanded','true'); mbtn.setAttribute('aria-label','Close menu'); }
+}
+if(mbtn && mlinks){
+  mbtn.addEventListener('click', function(){
+    if(mlinks.classList.contains('mobile-open')){ closeMenu(); } else { openMenu(); }
+  });
+  mlinkItems.forEach(function(item){ item.addEventListener('click', closeMenu); });
+  document.addEventListener('keydown', function(e){
+    if(e.key === 'Escape' && mlinks.classList.contains('mobile-open')){
+      closeMenu();
+      if(mbtn) mbtn.focus();
+    }
+  });
+}
+
+// Ask form submission (Resend via serverless /api/contact)
+var askForm = document.getElementById('ask-form');
+if (askForm) {
+  askForm.addEventListener('submit', async function(e){
+    e.preventDefault();
+    var btn = document.getElementById('ask-submit');
+    var statusEl = document.getElementById('ask-status');
+    btn.disabled = true;
+    btn.textContent = 'Sending...';
+    statusEl.removeAttribute('data-state');
+    statusEl.textContent = '';
+    try {
+      var res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify({
+          name: document.getElementById('ask-name').value,
+          email: document.getElementById('ask-email').value,
+          question: document.getElementById('ask-question').value
+        })
+      });
+      if(res.ok){
+        askForm.reset();
+        statusEl.setAttribute('data-state','success');
+        statusEl.textContent = 'Thanks. Your question has been sent. We will get back to you soon.';
+      } else {
+        throw new Error('Request failed');
+      }
+    } catch(err){
+      statusEl.setAttribute('data-state','error');
+      statusEl.textContent = 'Sorry, something went wrong and your question was not sent. Please try again, or email curt@helloeiko.com.';
+    } finally {
+      btn.disabled = false;
+      btn.textContent = 'Send question';
+    }
+  });
+}
+
+</script>
+
+
+
+</body></html>

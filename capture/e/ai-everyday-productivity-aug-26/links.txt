@@ -1,0 +1,4 @@
+INTERNAL-ANCHOR	#main	https://events.helloeiko.com/e/ai-everyday-productivity-aug-26#main	Skip to content
+INTERNAL	https://events.helloeiko.com/lilly-advocacy-ai#workshops	https://events.helloeiko.com/lilly-advocacy-ai#workshops	← Back to all workshops
+INTERNAL	/e/ai-everyday-productivity	https://events.helloeiko.com/e/ai-everyday-productivity	← See all dates for this workshop
+INTERNAL	/privacy	https://events.helloeiko.com/privacy	Privacy Policy

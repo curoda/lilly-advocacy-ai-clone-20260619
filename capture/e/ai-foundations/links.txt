@@ -1,0 +1,6 @@
+INTERNAL-ANCHOR	#main	https://events.helloeiko.com/e/ai-foundations#main	Skip to content
+INTERNAL	https://events.helloeiko.com/lilly-advocacy-ai#workshops	https://events.helloeiko.com/lilly-advocacy-ai#workshops	← Back to all workshops
+INTERNAL	/e/ai-foundations-aug-4	https://events.helloeiko.com/e/ai-foundations-aug-4	Aug 4, 10-11am ET →
+INTERNAL	/e/ai-foundations-aug-6	https://events.helloeiko.com/e/ai-foundations-aug-6	Aug 6, 12-1pm ET →
+INTERNAL	/e/ai-foundations-aug-17	https://events.helloeiko.com/e/ai-foundations-aug-17	Aug 17, 10-11am ET →
+INTERNAL	/privacy	https://events.helloeiko.com/privacy	Privacy Policy

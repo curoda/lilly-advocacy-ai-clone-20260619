@@ -1,0 +1,3 @@
+INTERNAL-ANCHOR	#main	https://events.helloeiko.com/privacy#main	Skip to content
+SPECIAL	mailto:events@helloeiko.com	mailto:events@helloeiko.com	events@helloeiko.com
+INTERNAL	/privacy	https://events.helloeiko.com/privacy	Privacy Policy

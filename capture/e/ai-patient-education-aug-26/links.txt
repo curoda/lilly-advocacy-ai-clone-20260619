@@ -1,0 +1,4 @@
+INTERNAL-ANCHOR	#main	https://events.helloeiko.com/e/ai-patient-education-aug-26#main	Skip to content
+INTERNAL	https://events.helloeiko.com/lilly-advocacy-ai#workshops	https://events.helloeiko.com/lilly-advocacy-ai#workshops	← Back to all workshops
+INTERNAL	/e/ai-patient-education	https://events.helloeiko.com/e/ai-patient-education	← See all dates for this workshop
+INTERNAL	/privacy	https://events.helloeiko.com/privacy	Privacy Policy

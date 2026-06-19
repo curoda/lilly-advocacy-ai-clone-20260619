@@ -1,0 +1,6 @@
+INTERNAL-ANCHOR	#main	https://events.helloeiko.com/e/ai-advocacy-policy#main	Skip to content
+INTERNAL	https://events.helloeiko.com/lilly-advocacy-ai#workshops	https://events.helloeiko.com/lilly-advocacy-ai#workshops	← Back to all workshops
+INTERNAL	/e/ai-advocacy-policy-aug-24	https://events.helloeiko.com/e/ai-advocacy-policy-aug-24	Aug 24, 2-3pm ET →
+INTERNAL	/e/ai-advocacy-policy-aug-28	https://events.helloeiko.com/e/ai-advocacy-policy-aug-28	Aug 28, 12-1pm ET →
+INTERNAL	/e/ai-advocacy-policy-sep-3	https://events.helloeiko.com/e/ai-advocacy-policy-sep-3	Sep 3, 10-11am ET →
+INTERNAL	/privacy	https://events.helloeiko.com/privacy	Privacy Policy

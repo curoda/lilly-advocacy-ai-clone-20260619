@@ -1,0 +1,8 @@
+https://events.helloeiko.com/eiko-logo.png
+https://events.helloeiko.com/eiko-logo-transparent.png
+https://events.helloeiko.com/lilly-logo.png
+https://fonts.gstatic.com/s/dmsans/v17/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu0-K4.woff2
+https://fonts.gstatic.com/s/dmserifdisplay/v17/-nFnOHM81r4j6k0gjAW3mujVU2B2G_Bx0g.woff2
+https://events.helloeiko.com/favicon-32.png
+https://events.helloeiko.com/favicon.ico
+https://events.helloeiko.com/apple-touch-icon.png

@@ -1,0 +1,13 @@
+{
+  "title": "ChatGPT Deep Dive: Setup, Customization & Key Features — hello EIKO",
+  "canonical": null,
+  "metas": {
+    "robots": "noindex, nofollow",
+    "viewport": "width=device-width, initial-scale=1"
+  },
+  "htmlLang": "en",
+  "scriptsSummary": [
+    "https://www.googletagmanager.com/gtag/js?id=G-HE4MQ35NWE",
+    "\n  window.dataLayer = window.dataLayer || [];\n  function gtag(){dataLayer.push(arguments);}\n  gtag('js', new Date());\n\n  gtag('config', 'G-HE4MQ35NWE');\n"
+  ]
+}
