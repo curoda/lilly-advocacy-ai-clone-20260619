@@ -1,0 +1,20 @@
+INTERNAL-ANCHOR	#main	https://events.helloeiko.com/lilly-advocacy-ai#main	Skip to content
+INTERNAL-ANCHOR	#overview	https://events.helloeiko.com/lilly-advocacy-ai#overview	Overview
+INTERNAL-ANCHOR	#workshops	https://events.helloeiko.com/lilly-advocacy-ai#workshops	Workshops
+INTERNAL-ANCHOR	#about	https://events.helloeiko.com/lilly-advocacy-ai#about	About
+INTERNAL-ANCHOR	#register	https://events.helloeiko.com/lilly-advocacy-ai#register	Contact
+INTERNAL-ANCHOR	#workshops	https://events.helloeiko.com/lilly-advocacy-ai#workshops	Register
+INTERNAL-ANCHOR	#workshops	https://events.helloeiko.com/lilly-advocacy-ai#workshops	Register
+INTERNAL-ANCHOR	#workshops	https://events.helloeiko.com/lilly-advocacy-ai#workshops	Register arrow_forward
+INTERNAL-ANCHOR	#workshops	https://events.helloeiko.com/lilly-advocacy-ai#workshops	See the workshops
+INTERNAL	/e/ai-foundations	https://events.helloeiko.com/e/ai-foundations	Register arrow_forward
+INTERNAL	/e/gemini-foundations	https://events.helloeiko.com/e/gemini-foundations	Register arrow_forward
+INTERNAL	/e/copilot-foundations	https://events.helloeiko.com/e/copilot-foundations	Register arrow_forward
+INTERNAL	/e/claude-foundations	https://events.helloeiko.com/e/claude-foundations	Register arrow_forward
+INTERNAL	/e/chatgpt-foundations	https://events.helloeiko.com/e/chatgpt-foundations	Register arrow_forward
+INTERNAL	/e/ai-everyday-productivity	https://events.helloeiko.com/e/ai-everyday-productivity	Register arrow_forward
+INTERNAL	/e/ai-fundraising-partnerships	https://events.helloeiko.com/e/ai-fundraising-partnerships	Register arrow_forward
+INTERNAL	/e/ai-advocacy-policy	https://events.helloeiko.com/e/ai-advocacy-policy	Register arrow_forward
+INTERNAL	/e/ai-patient-education	https://events.helloeiko.com/e/ai-patient-education	Register arrow_forward
+INTERNAL	/e/building-ai-agents	https://events.helloeiko.com/e/building-ai-agents	Register arrow_forward
+INTERNAL	/privacy	https://events.helloeiko.com/privacy	Privacy Policy

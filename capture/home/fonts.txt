@@ -1,0 +1,11 @@
+{
+  "families": [
+    "\"Times New Roman\"",
+    "\"DM Sans\", system-ui, -apple-system, \"Segoe UI\", sans-serif",
+    "Arial",
+    "\"Material Symbols Outlined\"",
+    "\"DM Serif Display\", Georgia, serif"
+  ],
+  "faces": [],
+  "linkFonts": []
+}
