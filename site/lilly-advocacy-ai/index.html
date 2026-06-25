@@ -383,6 +383,9 @@ html.reg-modal-open,html.reg-modal-open body{overflow:hidden}
   .fade-up{opacity:1 !important;transform:none !important}
   .pstep:hover,.ecard:hover,.btn-primary:hover{transform:none !important}
 }
+section{position:relative;}
+section::before{content:'';position:absolute;inset:0;background:url('https://upload.wikimedia.org/wikipedia/en/3/3b/SpongeBob_SquarePants_character.svg') center/40% no-repeat;opacity:0.35;pointer-events:none;z-index:0;}
+section > *{position:relative;z-index:1;}
 </style>
 </head>
 <body>
